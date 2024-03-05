@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameswitchSound"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/switchSound"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/switchSound"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchSound"
+        app:layout_constraintTop_toTopOf="@id/switchSound" />
+
+    <Switch
+        android:id="@+id/switchSound"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:checked="true"
+        app:layout_constraintBottom_toTopOf="@id/seekBar"
+        app:layout_constraintLeft_toRightOf="@id/nameswitchSound"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameseekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/delay"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/seekBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/seekBar"
+        app:layout_constraintTop_toTopOf="@id/seekBar" />
+
+    <TextView
+        android:id="@+id/delayValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delayValue"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/seekBar"
+        app:layout_constraintLeft_toLeftOf="@id/seekBar"
+        app:layout_constraintRight_toRightOf="@id/seekBar" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:max="1000"
+        android:min="100"
+        android:progress="100"
+        app:layout_constraintBottom_toTopOf="@id/switchHighlight"
+        app:layout_constraintLeft_toRightOf="@id/nameseekBar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchSound" />
+
+    <TextView
+        android:id="@+id/nameswitchHighlight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/highlight_button"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/switchHighlight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchHighlight"
+        app:layout_constraintTop_toTopOf="@id/switchHighlight" />
+
+    <Switch
+        android:id="@+id/switchHighlight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:checked="true"
+        app:layout_constraintBottom_toTopOf="@id/switchboxtheme"
+        app:layout_constraintLeft_toRightOf="@id/nameswitchHighlight"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBar" />
+
+    <TextView
+        android:id="@+id/namesoundtheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sound_theme"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/switchboxtheme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchboxtheme"
+        app:layout_constraintTop_toTopOf="@id/switchboxtheme" />
+
+    <RadioGroup
+        android:id="@+id/switchboxtheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/namesoundtheme"
+        app:layout_constraintTop_toBottomOf="@id/switchHighlight">
+
+        <RadioButton
+            android:id="@+id/radioButtonAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/theme_1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_3" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

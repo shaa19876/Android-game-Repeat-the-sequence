@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">bonusexercise</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="level">Level: </string>
+    <string name="level_score">0</string>
+    <string name="record">Record:</string>
+    <string name="record_score">0</string>
+    <string name="new_game">New game</string>
+    <string name="free_play">Free play</string>
+    <string name="about">About</string>
+    <string name="about_text">Rules of the game:\n\nThe interface consists of four buttons. When a button is pressed, a short sound is played. Each button has its sound, the sounds are of the same theme (e.g. 4 different sounds of animals...)\nAt first, the application plays a sequence of sounds with a small delay (e.g 500ms). Then, a user must repeat this sequence by successively pressing the desired buttons\nThe game is played by levels. With each level, one more sound is added to the playback sequence (previous elements of this sequence are the same). The sequence starts with one sound.</string>
+    <string name="author">Author: Toppingk</string>
+
+    <string name="sound_setting">sound</string>
+    <string name="delay_setting">delaySound</string>
+    <string name="highlight_setting">btnHighlight</string>
+    <string name="sound_theme_setting">soundTheme</string>
+
+    <string name="switchSound">Sound:</string>
+    <string name="delay">Delay:</string>
+    <string name="highlight_button">Highlight button:</string>
+    <string name="sound_theme">Sound theme:</string>
+    <string name="theme_1">ANIMAL</string>
+    <string name="theme_2">MUSIC</string>
+    <string name="theme_3">NOTES</string>
+    <string name="settings">Settings</string>
+    <string name="delayValue">0</string>
+</resources>
